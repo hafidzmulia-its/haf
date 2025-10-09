@@ -1,329 +1,664 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Welcome to haf.mul</title>
-    <!-- Font Awesome -->
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
-      integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    />
-    <!-- Bootstrap -->
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hafidz Mulia - Web Developer & UI/UX Designer</title>
+    <meta name="description" content="Professional portfolio and CV of Hafidz Mulia - Web Developer, UI/UX Designer, and Data Scientist">
+    <meta name="author" content="Hafidz Mulia">
+    <meta name="keywords" content="web developer, UI/UX designer, data scientist, portfolio, CV, resume">
+
+    <!-- Open Graph Meta Tags -->
+    <meta property="og:title" content="Hafidz Mulia - Web Developer & UI/UX Designer">
+    <meta property="og:description" content="Professional portfolio and CV of Hafidz Mulia">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="img/profile.jpg">
+
+    <!-- Twitter Meta Tags -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Hafidz Mulia - Web Developer & UI/UX Designer">
+    <meta name="twitter:description" content="Professional portfolio and CV">
+    <meta name="twitter:image" content="img/profile.jpg">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
+    
+        <!-- Bootstrap -->
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
       rel="stylesheet"
       integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
       crossorigin="anonymous"
     />
-    <!-- Google Fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
-      rel="stylesheet"
-    />
-    <!-- Logo -->
-    <link rel="icon" type="image/png" href="img/logo.png" />
-    <style>
-      body {
-        font-family: "Montserrat", sans-serif;
-      }
-      #jumbotron {
-        padding-top: 6rem;
-      }
-      section {
-        padding-top: 5rem;
-      }
-      .navbar,
-      .btn,
-      footer {
-        background-color: #7900fb;
-      }
-      .btn:hover {
-        background-color: #5f00d6;
-      }
-      .credit {
-        color: #cb8bff;
-      }
-      .social {
-        color: #fff;
-      }
-      .social:hover,
-      .credit:hover {
-        color: #e2bfff;
-      }
-    </style>
-  </head>
-  <body>
-    <!-- Navbar -->
-    <nav class="navbar navbar-expand-lg navbar-dark shadow fixed-top">
-      <div class="container">
-        <a class="navbar-brand px-0" href="#jumbotron">
-          <img src="img/logofull.svg" alt="haf." width="51" height="30" />
-        </a>
-        <button
-          class="navbar-toggler"
-          type="button"
-          data-bs-toggle="collapse"
-          data-bs-target="#navbarText"
-          aria-controls="navbarText"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
-        >
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarText">
-          <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-            <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#jumbotron"
-                >Home</a
-              >
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#about">About</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#project">My Projects</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#contact">Contact Me</a>
-            </li>
-          </ul>
-          <!-- <span class="navbar-text"> Navbar text with an inline element </span> -->
-        </div>
-      </div>
-    </nav>
-    <!-- Jumbotron -->
-    <section
-      class="container-fluid bg-body-tertiary text-center px-0"
-      id="jumbotron"
-    >
-      <img
-        src="img/profile.jpg"
-        alt="Hafidz Mulia"
-        class="object-fit-sm-contain rounded-circle img-thumbnail"
-        width="200"
-      />
-      <h1 class="display-5 fs-2 fw-bold mx-auto m-2">Hafidz Mulia</h1>
-      <p class="fs-4 ma-1 px-2">
-        Web Developer | UI/UX Designer | Data Scientist
-      </p>
-      <svg
-        class="bottom-0 p-0"
-        xmlns="http://www.w3.org/2000/svg"
-        viewBox="0 0 1440 320"
-      >
-        <path
-          fill="#fff"
-          fill-opacity="1"
-          d="M0,128L40,112C80,96,160,64,240,64C320,64,400,96,480,138.7C560,181,640,235,720,229.3C800,224,880,160,960,149.3C1040,139,1120,181,1200,202.7C1280,224,1360,224,1400,224L1440,224L1440,320L1400,320C1360,320,1280,320,1200,320C1120,320,1040,320,960,320C880,320,800,320,720,320C640,320,560,320,480,320C400,320,320,320,240,320C160,320,80,320,40,320L0,320Z"
-        ></path>
-      </svg>
-    </section>
-    <!-- About Me -->
-    <section id="about">
-      <div class="container pt-4">
-        <div class="row">
-          <div class="col pb-3 text-center">
-            <h2>About Me</h2>
-          </div>
-        </div>
-        <div class="row justify-content-center px-3">
-          <div class="col-md-8 pb-3 text-center">
-            <p>
-              As an enthusiastic Entry-Level Web Developer, I bring fresh
-              perspectives and a keen willingness to absorb new technologies and
-              methodologies. My recent project, showcases my foundational skills
-              in HTML, CSS, and responsive design, emphasizing my ability to
-              create visually appealing and user-friendly websites. I am adept
-              at integrating modern web fonts, icons, and SEO principles to
-              enhance online experiences. My dedication to continuous learning
-              and professional growth drives me to stay updated with the latest
-              trends in web development, aiming to contribute effectively to
-              dynamic web projects.
-            </p>
-          </div>
-        </div>
-      </div>
-      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
-        <path
-          fill="#F8F9FA"
-          fill-opacity="1"
-          d="M0,0L26.7,21.3C53.3,43,107,85,160,96C213.3,107,267,85,320,90.7C373.3,96,427,128,480,117.3C533.3,107,587,53,640,26.7C693.3,0,747,0,800,21.3C853.3,43,907,85,960,122.7C1013.3,160,1067,192,1120,170.7C1173.3,149,1227,75,1280,48C1333.3,21,1387,43,1413,53.3L1440,64L1440,320L1413.3,320C1386.7,320,1333,320,1280,320C1226.7,320,1173,320,1120,320C1066.7,320,1013,320,960,320C906.7,320,853,320,800,320C746.7,320,693,320,640,320C586.7,320,533,320,480,320C426.7,320,373,320,320,320C266.7,320,213,320,160,320C106.7,320,53,320,27,320L0,320Z"
-        ></path>
-      </svg>
-    </section>
-    <!-- Projects -->
-    <section id="project" class="bg-body-tertiary">
-      <div class="container pt-4">
-        <div class="row mb-3">
-          <div class="col text-center">
-            <h2>My Projects</h2>
-          </div>
-        </div>
-        <div class="row">
-          <div class="col-md-4 mb-3 px-4 px-sm-2">
-            <a
-              href="https://hafidzmulia-its.github.io/artikel/"
-              class="text-decoration-none"
-              ><div class="card">
-                <img
-                  src="img/artikel.png"
-                  class="card-img-top"
-                  alt="Artikel Hafidz"
-                />
-                <div class="card-body">
-                  <p class="card-text text-center">
-                    Self Project - Responsive News Reporting Website with Simple
-                    but Modern UI
-                  </p>
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/style.css">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="img/logo.png">
+</head>
+
+<body>
+    <!-- Toast Notification Container -->
+    <div role="region" aria-label="Notifications (F8)" tabindex="-1" style="pointer-events: none;">
+        <ol tabindex="-1" class="fixed top-0 z-[100] flex max-h-screen w-full flex-col-reverse p-4 sm:bottom-0 sm:right-0 sm:top-auto sm:flex-col md:max-w-[420px]"></ol>
+    </div>
+    
+    <div class="min-h-screen">
+        <!-- Navigation -->
+        <nav class="nav-fixed transition-smooth bg-background/95 backdrop-blur-md shadow-md">
+            <div class="container">
+                <div class="nav-container">
+                    <button class="nav-brand font-montserrat" onclick="window.location.href='#home'">
+                        haf<span class="text-gradient">.</span>
+                    </button>
+                    
+                    <div class="nav-menu">
+                        <button class="nav-link" data-href="#about">About</button>
+                        <button class="nav-link" data-href="#experience">Experience</button>
+                        <button class="nav-link" data-href="#education">Education</button>
+                        <button class="nav-link" data-href="#skills">Skills</button>
+                        <button class="nav-link" data-href="#projects">Projects</button>
+                        <button class="nav-link" data-href="#contact">Contact</button>
+                    </div>
+                    
+                    <button class="mobile-menu-btn">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <line x1="4" x2="20" y1="12" y2="12"></line>
+                            <line x1="4" x2="20" y1="6" y2="6"></line>
+                            <line x1="4" x2="20" y1="18" y2="18"></line>
+                        </svg>
+                    </button>
                 </div>
-              </div></a
-            >
-          </div>
-          <div class="col-md-4 mb-3 px-4 px-sm-2">
-            <a
-              href="https://github.com/hafidzmulia-its/CrossTheRoad"
-              class="text-decoration-none"
-              ><div class="card">
-                <img
-                  src="img/crosstheroad.png"
-                  class="card-img-top"
-                  alt="Abila Indonesia"
-                />
-                <div class="card-body">
-                  <p class="card-text">
-                    Cross The Road: Navigating Complexities with Java Swing - A
-                    Platform-Based Strategy Game
-                  </p>
+            </div>
+        </nav>
+
+        <main>
+            <!-- Hero Section -->
+            <section id="home" class="hero gradient-subtle animate-fade-in">
+                <div class="container">
+                    <div class="hero-content">
+                        <img
+                            src="img/profile.jpg"
+                            alt="Hafidz Mulia"
+                            class="object-fit-sm-contain rounded-circle img-thumbnail"
+                            width="180"
+                        />
+                        
+                        <h1 class="hero-title font-montserrat">Hafidz Mulia</h1>
+                        <p class="hero-subtitle">Web Developer | Programming Teacher | Lab Coordinator</p>
+                        <p class="hero-description">
+                            I build responsive, accessible websites, teach practical programming, and coordinate lab programming at ITS — combining product-focused development with hands-on mentorship.
+                        </p>
+                        
+                        <div class="hero-buttons">
+                            <button class="btn btn-primary">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="width: 20px; height: 20px; margin-right: 8px;">
+                                    <rect width="20" height="16" x="2" y="4" rx="2"></rect>
+                                    <path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"></path>
+                                </svg>
+                                Get in Touch
+                            </button>
+                            <button class="btn btn-secondary">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="width: 20px; height: 20px; margin-right: 8px;">
+                                    <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+                                    <polyline points="7 10 12 15 17 10"></polyline>
+                                    <line x1="12" x2="12" y1="15" y2="3"></line>
+                                </svg>
+                                Download CV
+                            </button>
+                        </div>
+                        
+                        <div class="hero-social">
+                            <a href="https://github.com/hafidzmulia-its" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                    <path d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.403 5.403 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4"></path>
+                                    <path d="M9 18c-4.51 2-5-2-7-2"></path>
+                                </svg>
+                            </a>
+                            <a href="https://www.linkedin.com/in/hafidz-mulia/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                    <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path>
+                                    <rect width="4" height="12" x="2" y="9"></rect>
+                                    <circle cx="4" cy="4" r="2"></circle>
+                                </svg>
+                            </a>
+                            <a href="https://www.instagram.com/haf.mul/" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                    <rect width="20" height="20" x="2" y="2" rx="5" ry="5"></rect>
+                                    <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+                                    <line x1="17.5" x2="17.51" y1="6.5" y2="6.5"></line>
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
                 </div>
-              </div></a
-            >
-          </div>
-          <div class="col-md-4 mb-3 px-4 px-sm-2">
-            <a
-              href="https://hafidzmulia-its.github.io/coffeeshop/"
-              class="text-decoration-none"
-              ><div class="card">
-                <img
-                  src="img/coffeeshop.png"
-                  class="card-img-top"
-                  alt="Haf. Coffee Shop"
-                />
-                <div class="card-body">
-                  <p class="card-text text-center">
-                    Self Project - Coffee Shop Responsive Website using HTML,
-                    CSS, and JS
-                  </p>
+            </section>
+
+            <!-- About Section -->
+            <section id="about" class="section-bg">
+                <div class="container">
+                    <h2 class="section-title font-montserrat">
+                        Professional <span class="text-gradient">Summary</span>
+                    </h2>
+                    <div class="card">
+                        <p class="card-content">
+                            I’m a Junior Web Developer, Programming Teacher, and Lab Coordinator passionate about building responsive, user-focused web applications and empowering others through code education. With hands-on experience in <span style="font-weight: 600; color: var(--primary);">Laravel, Tailwind CSS, Vue. JS, Next.js, SQL Server, and MongoDB</span>, I develop clean, efficient solutions that balance performance and usability.
+                        </p>
+                        <p class="card-content" style="margin-top: 1rem;">
+                            As a lab coordinator and assistant instructor at ITS, I’ve mentored students in algorithmic thinking, programming fundamentals, and practical web development. I enjoy translating complex technical concepts into accessible lessons while continuously learning and refining my craft. Driven by curiosity and collaboration, I aim to deliver impactful digital experiences that connect design, data, and real-world functionality.
+                        </p>
+                    </div>
                 </div>
-              </div></a
-            >
-          </div>
-        </div>
-      </div>
-      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
-        <path
-          fill="#ffffff"
-          fill-opacity="1"
-          d="M0,192L26.7,181.3C53.3,171,107,149,160,133.3C213.3,117,267,107,320,101.3C373.3,96,427,96,480,122.7C533.3,149,587,203,640,224C693.3,245,747,235,800,202.7C853.3,171,907,117,960,96C1013.3,75,1067,85,1120,122.7C1173.3,160,1227,224,1280,229.3C1333.3,235,1387,181,1413,154.7L1440,128L1440,320L1413.3,320C1386.7,320,1333,320,1280,320C1226.7,320,1173,320,1120,320C1066.7,320,1013,320,960,320C906.7,320,853,320,800,320C746.7,320,693,320,640,320C586.7,320,533,320,480,320C426.7,320,373,320,320,320C266.7,320,213,320,160,320C106.7,320,53,320,27,320L0,320Z"
-        ></path>
-      </svg>
-    </section>
-    <!-- Contact Me -->
-    <section id="contact">
-      <div class="container">
-        <div class="row pt-4">
-          <div class="col text-center mb-3">
-            <h2>Let's Connect !</h2>
-          </div>
-        </div>
-        <div class="row justify-content-center mb-5">
-          <div class="col-lg-6 col-md-8 col-10">
-            <form action="https://formspree.io/f/xrbzgnaz" method="POST">
-              <div class="mb-3">
-                <label for="name" class="form-label">Name</label>
-                <input
-                  type="text"
-                  class="form-control"
-                  id="name"
-                  name="name"
-                  aria-describedby="name"
-                  placeholder="Your Name"
-                  required
-                />
-              </div>
-              <div class="mb-3">
-                <label for="email" class="form-label">E-Mail</label>
-                <input
-                  type="email"
-                  class="form-control"
-                  id="email"
-                  name="email"
-                  placeholder="Your Email"
-                  required
-                />
-              </div>
-              <div class="mb-3">
-                <label for="message" class="form-label">Message</label>
-                <textarea
-                  class="form-control"
-                  placeholder="Hi there! I'm interested in discussing a project with you. What's the best way and time to get in touch?"
-                  id="floatingTextarea2"
-                  name="message"
-                  style="height: 100px"
-                  required
-                ></textarea>
-              </div>
-              <button type="submit" class="btn text-white">Submit</button>
-            </form>
-          </div>
-        </div>
-      </div>
-      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
-        <path
-          fill="#7900fb"
-          fill-opacity="1"
-          d="M0,128L26.7,128C53.3,128,107,128,160,122.7C213.3,117,267,107,320,117.3C373.3,128,427,160,480,170.7C533.3,181,587,171,640,170.7C693.3,171,747,181,800,186.7C853.3,192,907,192,960,181.3C1013.3,171,1067,149,1120,133.3C1173.3,117,1227,107,1280,85.3C1333.3,64,1387,32,1413,16L1440,0L1440,320L1413.3,320C1386.7,320,1333,320,1280,320C1226.7,320,1173,320,1120,320C1066.7,320,1013,320,960,320C906.7,320,853,320,800,320C746.7,320,693,320,640,320C586.7,320,533,320,480,320C426.7,320,373,320,320,320C266.7,320,213,320,160,320C106.7,320,53,320,27,320L0,320Z"
-        ></path>
-      </svg>
-    </section>
-    <!-- Footer -->
-    <footer class="text-center pb-4 pt-0 mt-0 text-white">
-      <div class="row justify-content-center mb-2">
-        <div class="col-md-3 col-6 d-flex justify-content-around fs-3">
-          <a href="https://www.instagram.com/haf.mul/" class="social"
-            ><i class="instagram fa-brands fa-instagram"></i
-          ></a>
-          <a href="https://www.linkedin.com/in/hafidz-mulia/" class="social"
-            ><i class="linkedin fa-brands fa-linkedin-in"></i
-          ></a>
-          <a href="https://github.com/hafidzmulia-its" class="social"
-            ><i class="github fa-brands fa-github"></i
-          ></a>
-          <a
-            href="https://www.upwork.com/freelancers/~01951af32f9c213d3d?viewMode=1"
-            class="social"
-            ><i class="fa-brands fa-upwork"></i
-          ></a>
-        </div>
-      </div>
-      <p class="fw-bold">
-        Created with <i class="fa-solid fa-heart text-danger"></i> by
-        <a
-          class="text-decoration-none credit"
-          href="https://www.instagram.com/haf.mul/"
-          >@haf.mul</a
-        >
-      </p>
-    </footer>
+            </section>
+
+            <!-- Experience Section -->
+            <section id="experience" class="gradient-subtle">
+                <div class="container">
+                    <h2 class="section-title font-montserrat">
+                        Work <span class="text-gradient">Experience</span>
+                    </h2>
+                    <div class="timeline">
+                        <div class="timeline-line"></div>
+                        
+                        <div class="timeline-item">
+                            <div class="timeline-dot"></div>
+                            <div class="card">
+                                <div class="experience-header">
+                                    <!-- <div class="experience-icon"> -->
+                                        <!-- <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                            <path d="M16 20V4a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"></path>
+                                            <rect width="20" height="14" x="2" y="6" rx="2"></rect>
+                                        </svg> -->
+                                        <img src="https://media.licdn.com/dms/image/v2/C560BAQHbixaKbrNyJA/company-logo_200_200/company-logo_200_200/0/1675732778362/pt_timedoor_indonesia_logo?e=1762992000&v=beta&t=7QclobFUtrxTL8VQmvjIKuIdWIP1D9IAKyLhjoUC7S4" alt="Timedoor Academy" class="experience-icon">
+                                    <!-- </div> -->
+                                    <div class="experience-info">
+                                        <h3 class="font-montserrat">Programming Teacher</h3>
+                                        <p class="experience-company">Timedoor Academy</p>
+                                        <p class="experience-date">Jan 2025 - Present</p>
+                                    </div>
+                                </div>
+                                <p class="experience-description">
+                                    Taught programming fundamentals to junior, kids, and teen learners; prepared lesson plans and mentored students on mini-projects
+                                </p>
+                                <ul class="experience-achievements">
+                                    <li><span class="achievement-bullet">▸</span> Instructed 20+ learners in Python & JavaScript fundamentals, data structures, and GUI projects.</li>
+                                    <li><span class="achievement-bullet">▸</span> Mentored students through final coding projects and delivered detailed performance feedback.</li>
+                                    <li><span class="achievement-bullet">▸</span> Improved learning outcomes and project completion rates via structured, interactive lessons.</li>
+                                </ul>
+                            </div>
+                        </div>
+                        
+                        <div class="timeline-item">
+                            <div class="timeline-dot"></div>
+                            <div class="card">
+                                <div class="experience-header">
+                                   
+                                        <img src="img/Provicom.png" alt="Provicom" class="experience-icon">
+                                  
+                                    <div class="experience-info">
+                                        <h3 class="font-montserrat">Laboratorium Assistant</h3>
+                                        <p class="experience-company">Programming and Visual Computing</p>
+                                        <p class="experience-date" id="coordinator-duration">Aug 2024 - Present</p>
+                                    </div>
+                                </div>
+                                <div class="subtimeline">
+                                    <!-- <div class="timeline-line"></div> -->
+                                    <div class="timeline-item">
+                                        <div class="timeline-dot"></div>
+                                        <h4 class="font-montserrat">Coordinator Assistant Laboratorium</h4>
+                                        <p class="experience-date">Aug 2025 - Present</p>
+                                        <p class="experience-description">Coordinate the Programming & Visual Computing Lab (ProviKom) at ITS Mathematics, overseeing practicum planning (Alpro 1 & 2), organizing workshops, and managing lab logistics and operations.</p>
+                                <!-- <ul class="experience-achievements">
+                                    <li><span class="achievement-bullet">▸</span> Completed 5+ successful projects</li>
+                                    <li><span class="achievement-bullet">▸</span> Maintained 5-star rating</li>
+                                    <li><span class="achievement-bullet">▸</span> Specialized in modern web technologies</li>
+                                </ul> -->
+                                    </div>
+                                    <div class="timeline-item">
+                                        <div class="timeline-dot"></div>
+                                        <h4 class="font-montserrat">Assistant Algorithms and Computer Programming 2 Even Semester 2024/2025</h4>
+                                        <p class="experience-date">Jan 2025 - Aug 2025</p>
+                                        <p class="experience-description">Mentored ~20 Mathematics ITS 2024 students through Java OOP fundamentals and supervised their final game development projects, leading to stronger coding practices and creative application.</p>
+                                    </div>
+                                    <div class="timeline-item">
+                                        <div class="timeline-dot"></div>
+                                        <h4 class="font-montserrat">Assistant Algorithms and Computer Programming 1 Odd Semester 2024/2025</h4>
+                                        <p class="experience-date">Aug 2024 - Jan 2025</p>
+                                        <p class="experience-description">Supported over 16 students in building strong programming fundamentals, contributing to a 40% increase in their understanding of algorithms.</p>
+                                    </div>
+                                </div>
+                                
+                            </div>
+                        </div>
+                        <div class="timeline-item">
+                            <div class="timeline-dot"></div>
+                            <div class="card">
+                                <div class="experience-header">
+                                   
+                                        <img src="https://media.licdn.com/dms/image/v2/C560BAQEaRCxmUlQFow/company-logo_200_200/company-logo_200_200/0/1630636081855?e=1762992000&v=beta&t=yPDu0JIz90HsoOEDkdr39CN0U59h4ljCZO7zvdxIYso" alt="HIMATIKA ITS" class="experience-icon">
+                                  
+                                    <div class="experience-info">
+                                        <h3 class="font-montserrat">Himpunan Mahasiswa Matematika (HIMATIKA)</h3>
+                                        <p class="experience-company">Institut Teknologi Sepuluh Nopember (ITS)</p>
+                                        <p class="experience-date" id="himatika-duration">May 2023 - Present</p>
+                                    </div>
+                                </div>
+                                <div class="subtimeline">
+                                    <!-- <div class="timeline-line"></div> -->
+                                    <div class="timeline-item">
+                                        <div class="timeline-dot"></div>
+                                        <h4 class="font-montserrat">1st Vice Head of Sentrum Katalis HIMATIKA ITS 2025</h4>
+                                        <p class="experience-date">Feb 2025 - Present</p>
+                                        <p class="experience-description">Monitored cabinet staff performance and implemented skill-development programs to strengthen operational capacity while aligning staff activities with the Sentrum Katalis vision.</p>
+                               
+                                    </div>
+                                    <div class="timeline-item">
+                                        <div class="timeline-dot"></div>
+                                        <h4 class="font-montserrat">Leader of Mathematics 2022 / STI 57</h4>
+                                        <p class="experience-date">May 2023 - Present</p>
+                                        <p class="experience-description">Successfully facilitated communication and coordination among 150+ Mathematics students, leading to a 20% increase in participation within the Department of Mathematics and the student association (HIMATIKA)</p>
+                                    </div>
+                                    <div class="timeline-item">
+                                        <div class="timeline-dot"></div>
+                                        <h4 class="font-montserrat">Speaker for Basic Media Schooling Training, HIMATIKA ITS 2024.</h4>
+                                        <p class="experience-date">Jul 2024</p>
+                                        <p class="experience-description">Enhancing fundamental knowledge of website development and conducting a workshop on creating a news reporting website.</p>
+                                    </div>
+                                </div>
+                                
+                            </div>
+                        </div>
+                        <div class="timeline-item">
+                            <div class="timeline-dot"></div>
+                            <div class="card">
+                                <div class="experience-header">
+                                   
+                                        <img src="img/LKKI.png" alt="LKKI Matematika ITS" class="experience-icon">
+                                  
+                                    <div class="experience-info">
+                                        <h3 class="font-montserrat">Lembaga Kajian Kerohanian Islam (LKKI)</h3>
+                                        <p class="experience-company">Departemen Matematika ITS</p>
+                                        <p class="experience-date" id="himatika-duration">2 years</p>
+                                    </div>
+                                </div>
+                                <div class="subtimeline">
+                                    <!-- <div class="timeline-line"></div> -->
+                                    <div class="timeline-item">
+                                        <div class="timeline-dot"></div>
+                                        <h4 class="font-montserrat">Head of Regeneration Department</h4>
+                                        <p class="experience-date">Jan 2024 - Dec 2024</p>
+                                        <p class="experience-description">Led organizational development and member training programs, resulting in a 30% improvement in student engagement and participation.</p>
+                               
+                                    </div>
+                                    <div class="timeline-item">
+                                        <div class="timeline-dot"></div>
+                                        <h4 class="font-montserrat">Staff of Regeneration Department</h4>
+                                        <p class="experience-date">Jan 2023 - Dec 2023</p>
+                                        <p class="experience-description">Developed organizational development and member training programs</p>
+                                    </div>
+                                </div>
+                                
+                            </div>
+                        </div>
+                        <div class="timeline-item">
+                            <div class="timeline-dot"></div>
+                            <div class="card">
+                                <div class="experience-header">
+                                   
+                                        <img src="https://media.licdn.com/dms/image/v2/C560BAQGyuKCPKicfsQ/company-logo_200_200/company-logo_200_200/0/1678085167844?e=1762992000&v=beta&t=Mu2M7besn4XidEXPTEOK21-Qp8-260zMNvasM3I83h8" alt="UKM Rebana ITS" class="experience-icon">
+                                        
+                                        <div class="experience-info">
+                                            <h3 class="font-montserrat">UKM Rebana</h3>
+                                            <p class="experience-company">Institut Teknologi Sepuluh Nopember</p>
+                                            <p class="experience-date" id="himatika-duration">2 years</p>
+                                        </div>
+                                    </div>
+                                    <div class="subtimeline">
+                                        <!-- <div class="timeline-line"></div> -->
+                                        <div class="timeline-item">
+                                            <div class="timeline-dot"></div>
+                                            <h4 class="font-montserrat">Vice Head of PM Department</h4>
+                                            <p class="experience-date">Jan 2024 - Dec 2024</p>
+                                            <p class="experience-description">Assisted in organizational development and resource planning, driving a 25% increase in team efficiency and participation.</p>
+                                            
+                                        </div>
+                                        <div class="timeline-item">
+                                            <div class="timeline-dot"></div>
+                                            <h4 class="font-montserrat">Staff of PM Department</h4>
+                                            <p class="experience-date">Jan 2023 - Dec 2023</p>
+                                            <p class="experience-description">Learn and develop the development of human resources at UKM Rebana ITS</p>
+                                        </div>
+                                    </div>
+                                    
+                                </div>
+                            </div>
+                            
+                            
+                        </div>
+                    </div>
+                </section>
+                
+                <!-- Education Section -->
+                <section id="education" class="section-bg">
+                    <div class="container">
+                        <h2 class="section-title font-montserrat">
+                            <span class="text-gradient">Education</span>
+                        </h2>
+                        <div class="grid">
+                            <div class="card">
+                                <div class="experience-header">
+                                    <img src="https://media.licdn.com/dms/image/v2/C560BAQGAIvKqmPiLjg/company-logo_200_200/company-logo_200_200/0/1668926730498?e=1762992000&v=beta&t=bcbqDQs8d2yyUUuhBH1JapOc8POsznc_hgvpO9Lh3OA" alt="UKM Rebana ITS" class="experience-icon">
+                                   
+                                <div class="experience-info">
+                                    <h3 class="font-montserrat">Bachelor of Mathematics</h3>
+                                    <p class="experience-company">Institut Teknologi Sepuluh Nopember</p>
+                                    <p class="experience-date">2022 - Present</p>
+                                </div>
+                            </div>
+                            <p class="experience-description">
+                                I am pursuing a Bachelor's degree in Mathematics at ITS, where I am developing a solid foundation in problem-solving, analytical thinking, and quantitative reasoning. My coursework includes advanced calculus, statistical methods, and discrete mathematics. Additionally, I have applied my knowledge to real-world projects in web development, game design, and data analysis.
+                            </p>
+                            <ul class="experience-achievements">
+                                <li><span class="achievement-bullet">▸</span> GPA: 3.34/4.0</li>
+                                <li><span class="achievement-bullet">▸</span> Relevant coursework: Web Development, Database Systems, Fundamental Programming</li>
+                                <li><span class="achievement-bullet">▸</span> Member of HIMATIKA ITS, STI 57, ProViKom ITS, LKKI Matematika ITS, UKM Rebana ITS</li>
+                            </ul>
+                        </div>
+                        
+                        <div class="card">
+                            <div class="experience-header">
+                          <img src="img/aluswah.png" alt="Al Uswah" class="experience-icon">
+                                <div class="experience-info">
+                                    <h3 class="font-montserrat">High School Diploma</h3>
+                                    <p class="experience-company">SMA IT Al Uswah Surabaya</p>
+                                    <p class="experience-date">2019 - 2022</p>
+                                </div>
+                            </div>
+                            <p class="experience-description">
+                                During my time at SMA Islam Terpadu Al Uswah, I was an active member of several student organizations and developed leadership, financial management, and mentoring skills. I was privileged to receive admission to Sepuluh Nopember Institute of Technology (ITS) through the highly competitive SNMPTN 2022 Invitation Path, which recognized my academic and extracurricular achievements.
+                            </p>
+                            <ul class="experience-achievements">
+                                <li><span class="achievement-bullet">▸</span> Grade : 92.02/100</li>
+                                <li><span class="achievement-bullet">▸</span> Science track with focus on Mathematics</li>
+                                <li><span class="achievement-bullet">▸</span> Chairman of SKI 2020-2021, Mentor of BPI, Eligible for SNMPTN 2022</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Skills Section -->
+            <section id="skills" class="gradient-subtle">
+                <div class="container">
+                    <h2 class="section-title font-montserrat">
+                        Skills & <span class="text-gradient">Technologies</span>
+                    </h2>
+                    <div class="skills-grid">
+                        <div class="skill-category">
+                            <h3 class="skill-category-title font-montserrat">Frontend Development</h3>
+                            <div class="skill-tags">
+                                <div class="skill-tag">HTML5</div>
+                                <div class="skill-tag">CSS3</div>
+                                <div class="skill-tag">JavaScript</div>
+                                <div class="skill-tag">React</div>
+                                <div class="skill-tag">Tailwind CSS</div>
+                                <div class="skill-tag">Bootstrap</div>
+                                <div class="skill-tag">Responsive Design</div>
+                            </div>
+                        </div>
+                        
+                        <div class="skill-category">
+                            <h3 class="skill-category-title font-montserrat">Backend & Tools</h3>
+                            <div class="skill-tags">
+                                <div class="skill-tag">Node.js</div>
+                                <div class="skill-tag">Git</div>
+                                <div class="skill-tag">REST APIs</div>
+                                <div class="skill-tag">Vite</div>
+                                <div class="skill-tag">npm</div>
+                            </div>
+                        </div>
+                        
+                        <div class="skill-category">
+                            <h3 class="skill-category-title font-montserrat">Design</h3>
+                            <div class="skill-tags">
+                                <div class="skill-tag">UI/UX Design</div>
+                                <div class="skill-tag">Figma</div>
+                                <div class="skill-tag">Adobe XD</div>
+                                <div class="skill-tag">Responsive Design</div>
+                                <div class="skill-tag">Typography</div>
+                            </div>
+                        </div>
+                        
+                        <div class="skill-category">
+                            <h3 class="skill-category-title font-montserrat">Other</h3>
+                            <div class="skill-tags">
+                                <div class="skill-tag">Java</div>
+                                <div class="skill-tag">Python</div>
+                                <div class="skill-tag">Data Analysis</div>
+                                <div class="skill-tag">SEO</div>
+                                <div class="skill-tag">Problem Solving</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Projects Section -->
+            <section id="projects" class="section-bg">
+                <div class="container">
+                    <h2 class="section-title font-montserrat">
+                        Featured <span class="text-gradient">Projects</span>
+                    </h2>
+                    <div class="projects-grid">
+                        <div class="project-card">
+                            <div class="project-image-container">
+                                <img src="img/artikel.png" alt="Responsive News Website" class="project-image">
+                                <div class="project-overlay"></div>
+                            </div>
+                            <div class="project-content">
+                                <h3 class="project-title font-montserrat">Responsive News Website</h3>
+                                <p class="project-description">
+                                    A modern news reporting website featuring responsive design and clean UI. Built with HTML, CSS, and JavaScript.
+                                </p>
+                                <div class="project-tags">
+                                    <span class="project-tag">HTML</span>
+                                    <span class="project-tag">CSS</span>
+                                    <span class="project-tag">JavaScript</span>
+                                    <span class="project-tag">Responsive</span>
+                                </div>
+                                <div class="project-links">
+                                    <a href="https://hafidzmulia-its.github.io/artikel/" target="_blank" rel="noopener noreferrer" class="project-link project-link-primary">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="margin-right: 8px;">
+                                            <path d="M15 3h6v6"></path>
+                                            <path d="M10 14 21 3"></path>
+                                            <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+                                        </svg>
+                                        View
+                                    </a>
+                                    <a href="#" target="_blank" rel="noopener noreferrer" class="project-link project-link-secondary">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                            <path d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.403 5.403 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4"></path>
+                                            <path d="M9 18c-4.51 2-5-2-7-2"></path>
+                                        </svg>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="project-card">
+                            <div class="project-image-container">
+                                <img src="img/crosstheroad.png" alt="Cross The Road Game" class="project-image">
+                                <div class="project-overlay"></div>
+                            </div>
+                            <div class="project-content">
+                                <h3 class="project-title font-montserrat">Cross The Road Game</h3>
+                                <p class="project-description">
+                                    A platform-based strategy game developed using Java Swing, featuring engaging gameplay and smooth mechanics.
+                                </p>
+                                <div class="project-tags">
+                                    <span class="project-tag">Java</span>
+                                    <span class="project-tag">Swing</span>
+                                    <span class="project-tag">Game Dev</span>
+                                </div>
+                                <div class="project-links">
+                                    <a href="#" target="_blank" rel="noopener noreferrer" class="project-link project-link-primary">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="margin-right: 8px;">
+                                            <path d="M15 3h6v6"></path>
+                                            <path d="M10 14 21 3"></path>
+                                            <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+                                        </svg>
+                                        View
+                                    </a>
+                                    <a href="https://github.com/hafidzmulia-its/CrossTheRoad" target="_blank" rel="noopener noreferrer" class="project-link project-link-secondary">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                            <path d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.403 5.403 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4"></path>
+                                            <path d="M9 18c-4.51 2-5-2-7-2"></path>
+                                        </svg>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="project-card">
+                            <div class="project-image-container">
+                                <img src="img/coffeeshop.png" alt="Coffee Shop Website" class="project-image">
+                                <div class="project-overlay"></div>
+                            </div>
+                            <div class="project-content">
+                                <h3 class="project-title font-montserrat">Coffee Shop Website</h3>
+                                <p class="project-description">
+                                    An elegant coffee shop website with smooth animations and responsive design. Perfect blend of aesthetics and functionality.
+                                </p>
+                                <div class="project-tags">
+                                    <span class="project-tag">HTML</span>
+                                    <span class="project-tag">CSS</span>
+                                    <span class="project-tag">JavaScript</span>
+                                    <span class="project-tag">Responsive</span>
+                                </div>
+                                <div class="project-links">
+                                    <a href="https://hafidzmulia-its.github.io/coffeeshop/" target="_blank" rel="noopener noreferrer" class="project-link project-link-primary">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="margin-right: 8px;">
+                                            <path d="M15 3h6v6"></path>
+                                            <path d="M10 14 21 3"></path>
+                                            <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+                                        </svg>
+                                        View
+                                    </a>
+                                    <a href="#" target="_blank" rel="noopener noreferrer" class="project-link project-link-secondary">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                            <path d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.403 5.403 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4"></path>
+                                            <path d="M9 18c-4.51 2-5-2-7-2"></path>
+                                        </svg>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Contact Section -->
+            <section id="contact" class="gradient-subtle">
+                <div class="container">
+                    <div class="contact-form">
+                        <h2 class="section-title font-montserrat">
+                            Let's <span class="text-gradient">Connect</span>
+                        </h2>
+                        <p class="contact-intro">
+                            Have a project in mind or want to collaborate? Feel free to reach out!
+                        </p>
+                        
+                        <div class="card">
+                            <form action="https://formspree.io/f/xrbzgnaz" method="POST">
+                                <div class="form-group">
+                                    <label for="name" class="form-label">Name</label>
+                                    <input type="text" class="form-input" id="name" name="name" placeholder="Your Name" required>
+                                </div>
+                                
+                                <div class="form-group">
+                                    <label for="email" class="form-label">Email</label>
+                                    <input type="email" class="form-input" id="email" name="email" placeholder="your.email@example.com" required>
+                                </div>
+                                
+                                <div class="form-group">
+                                    <label for="message" class="form-label">Message</label>
+                                    <textarea class="form-textarea" id="message" name="message" placeholder="Hi there! I'm interested in discussing a project with you..." required></textarea>
+                                </div>
+                                
+                                <button class="form-submit" type="submit">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="margin-right: 8px;">
+                                        <path d="M14.536 21.686a.5.5 0 0 0 .937-.024l6.5-19a.496.496 0 0 0-.635-.635l-19 6.5a.5.5 0 0 0-.024.937l7.93 3.18a2 2 0 0 1 1.112 1.11z"></path>
+                                        <path d="m21.854 2.147-10.94 10.939"></path>
+                                    </svg>
+                                    Send Message
+                                </button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <!-- Footer -->
+        <footer class="gradient-primary">
+            <div class="container">
+                <div class="footer-content">
+                    <div class="footer-info">
+                        <h3 class="footer-title font-montserrat">Hafidz Mulia</h3>
+                        <p class="footer-subtitle">Web Developer & UI/UX Designer</p>
+                    </div>
+                    
+                    <div class="footer-social">
+                        <a href="https://github.com/hafidzmulia-its" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.403 5.403 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4"></path>
+                                <path d="M9 18c-4.51 2-5-2-7-2"></path>
+                            </svg>
+                        </a>
+                        <a href="https://www.linkedin.com/in/hafidz-mulia/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path>
+                                <rect width="4" height="12" x="2" y="9"></rect>
+                                <circle cx="4" cy="4" r="2"></circle>
+                            </svg>
+                        </a>
+                        <a href="https://www.instagram.com/haf.mul/" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <rect width="20" height="20" x="2" y="2" rx="5" ry="5"></rect>
+                                <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+                                <line x1="17.5" x2="17.51" y1="6.5" y2="6.5"></line>
+                            </svg>
+                        </a>
+                        <a href="mailto:contact@hafidzmulia.com" aria-label="Email">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <rect width="20" height="16" x="2" y="4" rx="2"></rect>
+                                <path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"></path>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+                
+                <div class="footer-bottom">
+                    <p class="footer-copyright">
+                        © 2025 Hafidz Mulia. Made with 
+                        <svg class="heart-icon" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z"></path>
+                        </svg> 
+                        for the web.
+                    </p>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+    <!-- Custom JavaScript -->
+    <script src="js/script.js"></script>
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
       crossorigin="anonymous"
     ></script>
-  </body>
+</body>
 </html>
