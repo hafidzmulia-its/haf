@@ -8,6 +8,8 @@ document.addEventListener('DOMContentLoaded', function() {
     initializeContactForm();
     initializeLovableBadge();
     initializeSmoothScrolling();
+    initializeButtonInteractions();
+    initializeScrollToTop();
     updateDurations();
 });
 function calculateDuration(startDate, endDate = new Date()) {
@@ -285,25 +287,47 @@ function initializeLovableBadge() {
 
 // Button interactions
 function initializeButtonInteractions() {
+    console.log('Initializing button interactions...');
+    
     // Get in Touch button
     const getInTouchBtn = document.querySelector('button[class*="btn-primary"]');
+    console.log('Get in Touch button found:', getInTouchBtn);
     if (getInTouchBtn && getInTouchBtn.textContent.includes('Get in Touch')) {
         getInTouchBtn.addEventListener('click', (e) => {
             e.preventDefault();
+            console.log('Get in Touch button clicked');
             const contactSection = document.getElementById('contact');
             if (contactSection) {
                 contactSection.scrollIntoView({ behavior: 'smooth' });
+                showToast('Scrolling to contact section', 'info');
+            } else {
+                console.error('Contact section not found');
+                showToast('Contact section not found', 'error');
             }
         });
     }
     
     // Download CV button
     const downloadCvBtn = document.querySelector('button[class*="btn-secondary"]');
+    console.log('Download CV button found:', downloadCvBtn);
     if (downloadCvBtn && downloadCvBtn.textContent.includes('Download CV')) {
         downloadCvBtn.addEventListener('click', (e) => {
             e.preventDefault();
-            // You can add the actual CV download link here
-            showToast('CV download will be available soon!', 'info');
+            console.log('Download CV button clicked');
+            try {
+                // Create temporary download link
+                const link = document.createElement('a');
+                link.href = 'cv-hafidz-mulia.pdf';
+                link.download = 'Hafidz-Mulia-CV.pdf';
+                link.style.display = 'none';
+                document.body.appendChild(link);
+                link.click();
+                document.body.removeChild(link);
+                showToast('CV download started!', 'success');
+            } catch (error) {
+                console.error('Error downloading CV:', error);
+                showToast('Error downloading CV', 'error');
+            }
         });
     }
 }
