@@ -1,6 +1,7 @@
-# 🌟 Hafidz Mulia - Portfolio Website
 
-[![Live Demo](https://img.shields.io/badge/demo-live-success?style=for-the-badge)](https://hafidzmulia.com)
++0.   # 🌟 Hafidz Mulia - Portfolio Website
+
+[![Live Demo](https://img.shields.io/badge/demo-live-success?style=for-the-badge)](https://hafmul.site)
 [![License](https://img.shields.io/badge/license-MIT-blue?style=for-the-badge)](LICENSE)
 
 > A sleek, responsive portfolio website showcasing my journey as a Web Developer, Programming Teacher, and Lab Coordinator at ITS. Built with modern web technologies and achieving 20% increase in portfolio traffic.
