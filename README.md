@@ -184,7 +184,7 @@ git push origin main
 ## 📞 Contact
 
 **Hafidz Mulia**
-- 🌐 Website: [hafidzmulia.com](https://hafidzmulia.com)
+- 🌐 Website: [hafidzmulia.com](https://hafmul.site)
 - 💼 LinkedIn: [linkedin.com/in/hafidz-mulia](https://www.linkedin.com/in/hafidz-mulia/)
 - 🐙 GitHub: [github.com/hafidzmulia-its](https://github.com/hafidzmulia-its)
 - 📧 Email: hafidzmuliia@gmail.com
