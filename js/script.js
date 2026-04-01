@@ -3,6 +3,7 @@ document.addEventListener('DOMContentLoaded', function() {
     console.log('Portfolio website loaded successfully!');
     
     // Initialize components
+    renderFeaturedProjects();
     initializeNavigation();
     initializeAnimations();
     initializeContactForm();
@@ -481,4 +482,125 @@ if (typeof module !== 'undefined' && module.exports) {
         showToast,
         handleFormSubmit
     };
+}
+function renderFeaturedProjects() {
+    const filterBar = document.getElementById('project-filter-bar');
+    const grid = document.getElementById('featured-projects-grid');
+    const count = document.getElementById('project-results-count');
+    const projects = Array.isArray(window.portfolioProjects) ? [...window.portfolioProjects] : [];
+
+    if (!filterBar || !grid || projects.length === 0) {
+        return;
+    }
+
+    const filters = [
+        { id: 'featured', label: 'Featured' },
+        { id: 'all', label: 'All Repos' },
+        { id: 'nextjs', label: 'Next.js / React' },
+        { id: 'laravel', label: 'Laravel / PHP' },
+        { id: 'gis', label: 'GIS / Maps' },
+        { id: 'health', label: 'Health-Tech' },
+        { id: 'education', label: 'Education' },
+        { id: 'systems', label: 'Internal Systems' },
+        { id: 'frontend', label: 'Frontend' },
+        { id: 'experiments', label: 'Experiments' }
+    ];
+
+    let activeFilter = 'featured';
+
+    const getProjectsForFilter = (filterId) => {
+        const filtered = filterId === 'all'
+            ? projects
+            : projects.filter((project) => filterId === 'featured'
+                ? project.featured
+                : Array.isArray(project.categories) && project.categories.includes(filterId));
+
+        return filtered.sort((a, b) => (b.sortKey || 0) - (a.sortKey || 0) || a.title.localeCompare(b.title));
+    };
+
+    const renderFilterButtons = () => {
+        filterBar.innerHTML = filters.map((filter) => {
+            const isActive = filter.id === activeFilter;
+            return `<button class="project-filter-btn${isActive ? ' active' : ''}" data-project-filter="${filter.id}" type="button">${filter.label}</button>`;
+        }).join('');
+    };
+
+    const createProjectCard = (project) => {
+        const imageMarkup = project.coverImage
+            ? `<img src="${project.coverImage}" alt="${escapeProjectText(project.title)}" class="project-image">`
+            : `<div class="project-image project-image-placeholder"><span>${escapeProjectText(project.coverLabel || project.title)}</span></div>`;
+
+        const pills = [
+            project.period,
+            project.role,
+            project.status,
+            `${project.repoVisibility} Repo`
+        ].filter(Boolean).map((value) => `<span class="project-meta-pill">${escapeProjectText(value)}</span>`).join('');
+
+        const detailLink = `<a href="porto-show.html?project=${project.slug}" class="project-link project-link-show">Show</a>`;
+
+        const primaryLink = project.liveUrl
+            ? `<a href="${project.liveUrl}" target="_blank" rel="noopener noreferrer" class="project-link project-link-primary">Live Site</a>`
+            : project.repoUrl
+                ? `<a href="${project.repoUrl}" target="_blank" rel="noopener noreferrer" class="project-link project-link-primary">GitHub</a>`
+                : `<span class="project-link project-link-disabled">Private Repo</span>`;
+
+        const secondaryLink = project.liveUrl && project.repoUrl
+            ? `<a href="${project.repoUrl}" target="_blank" rel="noopener noreferrer" class="project-link project-link-secondary">GitHub</a>`
+            : '';
+
+        return `
+            <article class="project-card project-card-catalog">
+                <div class="project-image-container">
+                    ${imageMarkup}
+                    <div class="project-overlay"></div>
+                    <span class="project-status-badge">${escapeProjectText(project.status)}</span>
+                </div>
+                <div class="project-content">
+                    <p class="project-kicker">${escapeProjectText(project.category)}</p>
+                    <h3 class="project-title font-montserrat">${escapeProjectText(project.title)}</h3>
+                    <p class="project-roleline">${escapeProjectText(project.role)}</p>
+                    <div class="project-meta">${pills}</div>
+                    <p class="project-description">${escapeProjectText(project.summary)}</p>
+                    <div class="project-tags">
+                        ${(project.tags || []).map((tag) => `<span class="project-tag">${escapeProjectText(tag)}</span>`).join('')}
+                    </div>
+                    <div class="project-links">
+                        ${detailLink}
+                        ${primaryLink}
+                        ${secondaryLink}
+                    </div>
+                </div>
+            </article>
+        `;
+    };
+
+    const renderProjects = () => {
+        const visibleProjects = getProjectsForFilter(activeFilter);
+        grid.innerHTML = visibleProjects.map(createProjectCard).join('');
+        count.textContent = `${visibleProjects.length} project${visibleProjects.length !== 1 ? 's' : ''}`;
+    };
+
+    filterBar.addEventListener('click', (event) => {
+        const button = event.target.closest('[data-project-filter]');
+        if (!button) {
+            return;
+        }
+
+        activeFilter = button.getAttribute('data-project-filter') || 'featured';
+        renderFilterButtons();
+        renderProjects();
+    });
+
+    renderFilterButtons();
+    renderProjects();
+}
+
+function escapeProjectText(value) {
+    return String(value)
+        .replace(/&/g, '&amp;')
+        .replace(/</g, '&lt;')
+        .replace(/>/g, '&gt;')
+        .replace(/"/g, '&quot;')
+        .replace(/'/g, '&#39;');
 }
