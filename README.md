@@ -1,6 +1,7 @@
 # Hafidz Mulia - Portfolio Website
 
 [![Live Demo](https://img.shields.io/badge/demo-live-success?style=for-the-badge)](https://hafmul.site)
+[![Live Demo](https://img.shields.io/badge/demo-live-success?style=for-the-badge)](https://hafmul.site)
 [![License](https://img.shields.io/badge/license-MIT-blue?style=for-the-badge)](LICENSE)
 
 Static portfolio website for Hafidz Mulia, focused on full-stack web development work across Laravel, Next.js, GIS, reporting systems, and health-tech products.
