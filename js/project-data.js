@@ -1,5 +1,41 @@
 window.portfolioProjects = [
     {
+        slug: 'arahbelajar',
+        title: 'ArahBelajar',
+        period: '2026',
+        sortKey: 20260601,
+        category: 'Education / Web Platform',
+        categories: ['nextjs', 'education'],
+        featured: true,
+        role: 'Fullstack Developer',
+        status: 'Live',
+        repoVisibility: 'Private',
+        liveUrl: 'https://arahbelajar.vercel.app',
+        repoUrl: '',
+        coverImage: '',
+        coverLabel: 'ArahBelajar',
+        tags: ['Next.js', 'TypeScript', 'Firebase', 'Google Sheets API'],
+        summary: 'Adaptive learning platform with pretest, tryout, recommendation, scaffolding, posttest, and dashboard workflows for real academic use.'
+    },
+    {
+        slug: 'mainbipa',
+        title: 'mainbipa.id',
+        period: '2026',
+        sortKey: 20260530,
+        category: 'Education / Language Learning',
+        categories: ['nextjs', 'education'],
+        featured: true,
+        role: 'Product Builder',
+        status: 'Live',
+        repoVisibility: 'Private',
+        liveUrl: 'https://mainbipa.id',
+        repoUrl: '',
+        coverImage: '',
+        coverLabel: 'mainbipa.id',
+        tags: ['Next.js', 'TypeScript', 'Firebase', 'Tailwind CSS'],
+        summary: 'Language-learning platform for BIPA learners with structured modules, guided progression, and practical Indonesian learning flow.'
+    },
+    {
         slug: 'nechcode',
         title: 'nechcode.id',
         period: '2026',
@@ -78,7 +114,7 @@ window.portfolioProjects = [
         sortKey: 20260309,
         category: 'Health-Tech / Education Platform',
         categories: [],
-        featured: true,
+        featured: false,
         role: 'Fullstack Developer',
         status: 'Live',
         repoVisibility: 'Private',
@@ -88,6 +124,24 @@ window.portfolioProjects = [
         coverLabel: 'PREMOM',
         tags: ['Next.js', 'Appwrite', 'Coze API', 'Google Sheets'],
         summary: 'Prenatal education platform with tests, materials, admin workflows, and chatbot support for a health-focused client context.'
+    },
+    {
+        slug: 'smartbalita-app',
+        title: 'SMARTBALITA',
+        period: '2026',
+        sortKey: 20260429,
+        category: 'Health-Tech / Mobile App',
+        categories: ['health'],
+        featured: true,
+        role: 'Mobile Developer',
+        status: 'Private',
+        repoVisibility: 'Private',
+        liveUrl: '',
+        repoUrl: '',
+        coverImage: '',
+        coverLabel: 'SMARTBALITA',
+        tags: ['React Native', 'TypeScript', 'Expo', 'Mobile UX'],
+        summary: 'Child-focused mobile support app with structured user flows, practical data capture, and real mobile usage scenarios.'
     },
     {
         slug: 'nestbloom',
@@ -161,7 +215,7 @@ window.portfolioProjects = [
     },
     {
         slug: 'erapor',
-        title: 'Rapor HIMATIKA',
+        title: 'erapor',
         period: '2025',
         sortKey: 20251211,
         category: 'Internal Reporting Platform',
@@ -173,9 +227,9 @@ window.portfolioProjects = [
         liveUrl: 'https://rapor-himatika.vercel.app',
         repoUrl: 'https://github.com/hafidzmulia-its/erapor',
         coverImage: 'img/rapor.jpeg',
-        coverLabel: 'Rapor HIMATIKA',
+        coverLabel: 'erapor',
         tags: ['Next.js', 'MongoDB', 'NextAuth', 'PDF Export'],
-        summary: 'Reporting automation platform with role-based dashboards, export workflows, and centralized internal operations for HIMATIKA.'
+        summary: 'Reporting automation platform with role-based dashboards, export workflows, and a more centralized internal reporting workflow.'
     },
     {
         slug: 'sina',
@@ -414,9 +468,116 @@ window.portfolioProjects = [
         coverLabel: 'Cross The Road',
         tags: ['Java', 'Swing', 'Game Dev'],
         summary: 'Java Swing game project created as a final practicum assignment with simple gameplay systems and event-driven logic.'
+    },
+    {
+        slug: 'merge-binary-linear',
+        title: 'MergeBinaryLinear',
+        period: '2024',
+        sortKey: 20240728,
+        category: 'Algorithms / Java Practice',
+        categories: ['experiments'],
+        role: 'Student Developer',
+        status: 'Practice',
+        repoVisibility: 'Public',
+        liveUrl: '',
+        repoUrl: 'https://github.com/hafidzmulia-its/MergeBinaryLinear',
+        coverImage: '',
+        coverLabel: 'Algorithms',
+        tags: ['Java', 'Algorithms', 'Search', 'Sorting'],
+        summary: 'Algorithm practice repository focused on merge, binary, and linear search implementations in Java.'
+    },
+    {
+        slug: 'sorting-but-cool',
+        title: 'SortingButCOol',
+        period: '2024',
+        sortKey: 20240714,
+        category: 'Algorithms / Java Practice',
+        categories: ['experiments'],
+        role: 'Student Developer',
+        status: 'Practice',
+        repoVisibility: 'Public',
+        liveUrl: '',
+        repoUrl: 'https://github.com/hafidzmulia-its/SortingButCOol',
+        coverImage: '',
+        coverLabel: 'Sorting',
+        tags: ['Java', 'Algorithms', 'Sorting'],
+        summary: 'Java practice project for sorting algorithm implementation and comparative logic exercises.'
+    },
+    {
+        slug: 'etsalpro',
+        title: 'etsalpro',
+        period: '2024',
+        sortKey: 20240618,
+        category: 'Coursework / Programming Basics',
+        categories: ['experiments'],
+        role: 'Student Developer',
+        status: 'Practice',
+        repoVisibility: 'Public',
+        liveUrl: '',
+        repoUrl: 'https://github.com/hafidzmulia-its/etsalpro',
+        coverImage: '',
+        coverLabel: 'etsalpro',
+        tags: ['Java', 'Coursework', 'Programming'],
+        summary: 'Introductory programming coursework repository representing early Java problem-solving and implementation practice.'
     }
 ];
 const projectDetailMap = {
+    arahbelajar: {
+        categories: ['featured', 'nextjs', 'education'],
+        domain: 'Education / Guided Learning Platform',
+        mediaFolder: 'arahbelajar',
+        overview: [
+            'ArahBelajar turns a research-driven learning model into a usable product for real academic workflows.',
+            'The platform combines assessment flow, recommendation, scaffolding, and dashboard visibility in one learner-facing system.'
+        ],
+        highlights: [
+            'Built pretest, tryout, recommendation, scaffolding, and posttest flows in one platform.',
+            'Connected learner-facing usability with admin and monitoring dashboards.',
+            'Represents current education-product delivery rather than a prototype-only build.'
+        ],
+        stack: {
+            Frontend: 'Next.js, React, TypeScript, Tailwind CSS',
+            Backend: 'Next.js app architecture',
+            Data: 'Firebase, Google Sheets API',
+            Auth: 'Application-managed authentication',
+            Extras: 'Dashboard workflow, learning-state handling'
+        },
+        scenes: [
+            { title: 'Landing or Dashboard', description: 'Main entry state for learners or platform overview.' },
+            { title: 'Assessment Flow', description: 'Core tryout, recommendation, or scaffolding interaction.' },
+            { title: 'Scaffolding View', description: 'Supporting interaction for guided learner assistance or recommendation flow.' },
+            { title: 'Management View', description: 'Dashboard or tracked learning-state view for operations.' },
+            { title: 'Detail Screen', description: 'Additional screen showing supporting platform behavior.' }
+        ]
+    },
+    mainbipa: {
+        categories: ['featured', 'nextjs', 'education'],
+        domain: 'Language Learning / Education Product',
+        mediaFolder: 'mainbipa',
+        overview: [
+            'mainbipa.id is a language-learning product designed for real BIPA learning use rather than as a portfolio-only concept.',
+            'The platform focuses on structured modules, guided progression, and practical Indonesian learning flow for non-native learners.'
+        ],
+        highlights: [
+            'Built learner-friendly language-practice flow with structured educational progression.',
+            'Focused on practical product direction and learning usability rather than static presentation.',
+            'Represents a real education-oriented build with clear user value.'
+        ],
+        stack: {
+            Frontend: 'Next.js, React, TypeScript, Tailwind CSS',
+            Backend: 'Next.js app architecture',
+            Data: 'Firebase',
+            Auth: 'Firebase Authentication',
+            Extras: 'Guided learning flow, module structure'
+        },
+        scenes: [
+            { title: 'Landing or Home', description: 'Main product entry and language-learning presentation.' },
+            { title: 'Learning Flow', description: 'Structured module, lesson, or guided practice interface.' },
+            { title: 'Module View', description: 'Supporting module or lesson structure inside the product.' },
+            { title: 'Progression State', description: 'Additional screen showing learner progression or support flow.' },
+            { title: 'Supporting Screen', description: 'Another practical view from the language-learning experience.' }
+        ]
+    },
     nechcode: {
         categories: ['featured', 'nextjs', 'frontend'],
         domain: 'Agency / Branding / Web Presence',
@@ -500,8 +661,8 @@ const projectDetailMap = {
         domain: 'Safety Reporting / Mobile Operations',
         mediaFolder: 'realkeke',
         overview: [
-            'REAL KEKE digitizes workplace safety reporting with a mobile-first experience for submission, follow-up, and operational monitoring.',
-            'The application combines case creation, status tracking, media upload, and notification flow inside a PWA-ready interface.'
+            'REAL KEKE is a mobile-first incident reporting product built for practical operational use.',
+            'The application combines submission, media evidence, status tracking, comments, and update notifications inside a PWA-ready workflow.'
         ],
         highlights: [
             'Built mobile-first reporting flows designed for practical field use.',
@@ -518,11 +679,13 @@ const projectDetailMap = {
         scenes: [
             { title: 'Mobile Dashboard', description: 'Primary mobile view for reporting and tracking K3 incidents.' },
             { title: 'Report Workflow', description: 'Incident submission or case-detail workflow with media support.' },
-            { title: 'Operational Follow-up', description: 'Additional state showing monitoring, comments, or admin handling.' }
+            { title: 'Media Evidence', description: 'Screen showing image, attachment, or evidence capture flow.' },
+            { title: 'Operational Follow-up', description: 'Additional state showing monitoring, comments, or admin handling.' },
+            { title: 'Status Update', description: 'Supporting screen showing tracked incident progress or notification state.' }
         ]
     },
     premom: {
-        categories: ['featured', 'nextjs', 'health', 'education'],
+        categories: ['nextjs', 'health', 'education'],
         domain: 'Prenatal Education / Health-Tech',
         mediaFolder: 'premom',
         overview: [
@@ -545,6 +708,34 @@ const projectDetailMap = {
             { title: 'Homepage', description: 'Main user-facing landing page for the prenatal education platform.' },
             { title: 'Learning Module', description: 'Educational materials or test workflow inside the product.' },
             { title: 'Admin or Progress View', description: 'Supplementary interface showing platform management or user progression.' }
+        ]
+    },
+    'smartbalita-app': {
+        categories: ['featured', 'health'],
+        domain: 'Child Support / Mobile Product',
+        mediaFolder: 'smartbalita-app',
+        overview: [
+            'SMARTBALITA is a child-focused mobile support product designed for real usage scenarios with structured flows and practical data handling.',
+            'It broadens the portfolio beyond web delivery and shows mobile product work through a React Native implementation.'
+        ],
+        highlights: [
+            'Built mobile-first flows for child-focused support scenarios.',
+            'Represents practical React Native delivery rather than a simple UI exercise.',
+            'Adds stronger mobile-product range to the featured portfolio set.'
+        ],
+        stack: {
+            Frontend: 'React Native, TypeScript, Expo',
+            Backend: 'Mobile-first application architecture',
+            Data: 'Application-managed records',
+            Auth: 'Private implementation',
+            Extras: 'Android-first UX, structured mobile workflow'
+        },
+        scenes: [
+            { title: 'Home or Overview', description: 'Primary mobile entry screen for the app.' },
+            { title: 'Core Workflow', description: 'Structured mobile flow for child-focused support activity.' },
+            { title: 'Data Capture', description: 'Supporting screen showing practical input or data-record flow.' },
+            { title: 'Supporting Screen', description: 'Additional state showing practical app usage or data handling.' },
+            { title: 'Detail State', description: 'Additional mobile screen representing a real app interaction path.' }
         ]
     },
     nestbloom: {
@@ -651,13 +842,13 @@ const projectDetailMap = {
         domain: 'Reporting / Internal Operations',
         mediaFolder: 'rapor',
         overview: [
-            'Rapor HIMATIKA was built to replace repetitive reporting work with a centralized web platform for organizational operations.',
+            'erapor came from a reporting workflow I experienced directly and turned into a centralized internal product.',
             'The system combines access control, report management, and export features so reporting can be handled faster and more consistently.'
         ],
         highlights: [
             'Built role-based dashboards for internal users and administrators.',
             'Implemented PDF and Excel-oriented export workflows for reporting.',
-            'Created a stronger internal-tool case study around operational efficiency.'
+            'Created a stronger workflow-automation case study around operational efficiency.'
         ],
         stack: {
             Frontend: 'Next.js 15, React 19, TypeScript, Tailwind CSS',
@@ -669,7 +860,9 @@ const projectDetailMap = {
         scenes: [
             { title: 'Dashboard', description: 'Main reporting dashboard for internal operations.' },
             { title: 'Report Workflow', description: 'Report creation, management, or export-oriented workflow.' },
-            { title: 'Admin View', description: 'Administrative management or overview interface.' }
+            { title: 'Export Flow', description: 'Supporting state for document export or recap workflow.' },
+            { title: 'Admin View', description: 'Administrative management or overview interface.' },
+            { title: 'Detail Screen', description: 'Additional operational screen from the reporting system.' }
         ]
     },
     sina: {
@@ -701,7 +894,6 @@ const projectDetailMap = {
     'e-kos': {
         categories: ['nextjs', 'gis', 'systems'],
         domain: 'GIS / Spatial Search / Property',
-        mediaFolder: 'e-kos',
         overview: [
             'e-kos is a spatial search platform for discovering boarding houses near ITS through map-based browsing and filter-driven search.',
             'The project combines GIS concepts, listing workflows, authentication, and full-stack TypeScript implementation.'
@@ -717,12 +909,7 @@ const projectDetailMap = {
             Data: 'Supabase, PostgreSQL, PostGIS',
             Auth: 'NextAuth.js, Google OAuth',
             Extras: 'Vercel Blob, Vercel'
-        },
-        scenes: [
-            { title: 'Map Search', description: 'Interactive boarding-house discovery flow with map-based browsing and nearby results.' },
-            { title: 'Listing Detail', description: 'Property detail or listing-focused view showing the core exploration workflow.' },
-            { title: 'Dashboard', description: 'Supporting admin or management screen inside the e-kos product flow.' }
-        ]
+        }
     },
     literasik: {
         categories: ['laravel', 'education', 'systems'],
@@ -818,15 +1005,7 @@ const projectDetailMap = {
     },
     'vue-tasty-recipes': {
         categories: ['frontend'],
-        domain: 'Frontend Showcase / Recipe UI',
-        coverImage: 'img/vue-tasty/1.png',
-        screenshots: [
-            {
-                image: 'img/vue-tasty/1.png',
-                title: 'Vue Tasty Recipes - Main View',
-                description: 'Primary recipe browsing interface for the Vue-based showcase project.'
-            }
-        ]
+        domain: 'Frontend Showcase / Recipe UI'
     },
     'greeting-site': {
         categories: ['nextjs', 'frontend'],
@@ -834,15 +1013,7 @@ const projectDetailMap = {
     },
     abilacomp: {
         categories: ['frontend'],
-        domain: 'Branding / Company Profile',
-        coverImage: 'img/abila/1.png',
-        screenshots: [
-            {
-                image: 'img/abila/1.png',
-                title: 'Abilacomp - Main View',
-                description: 'Company-profile landing screen representing the delivered frontend presentation.'
-            }
-        ]
+        domain: 'Branding / Company Profile'
     },
     daftarsiswa: {
         categories: ['systems', 'frontend'],
@@ -850,15 +1021,7 @@ const projectDetailMap = {
     },
     artikel: {
         categories: ['frontend'],
-        domain: 'Static Frontend / News Presentation',
-        coverImage: 'img/artikel/artikel.png',
-        screenshots: [
-            {
-                image: 'img/artikel/artikel.png',
-                title: 'Artikel - Main View',
-                description: 'Responsive news-style homepage showing the project layout and content hierarchy.'
-            }
-        ]
+        domain: 'Static Frontend / News Presentation'
     },
     artikels: {
         categories: ['frontend'],
@@ -866,27 +1029,23 @@ const projectDetailMap = {
     },
     coffeeshop: {
         categories: ['frontend'],
-        domain: 'Landing Page / Static Frontend',
-        coverImage: 'img/coffeeshop/coffeeshop.png',
-        screenshots: [
-            {
-                image: 'img/coffeeshop/coffeeshop.png',
-                title: 'Coffee Shop Website - Main View',
-                description: 'Landing-page screenshot highlighting the coffee brand presentation and responsive layout.'
-            }
-        ]
+        domain: 'Landing Page / Static Frontend'
     },
     'cross-the-road': {
         categories: ['experiments'],
-        domain: 'Game Development / Java Practice',
-        coverImage: 'img/crosstheroad/1.png',
-        screenshots: [
-            {
-                image: 'img/crosstheroad/1.png',
-                title: 'Cross The Road - Main View',
-                description: 'Gameplay screen from the Java Swing final practicum project.'
-            }
-        ]
+        domain: 'Game Development / Java Practice'
+    },
+    'merge-binary-linear': {
+        categories: ['experiments'],
+        domain: 'Algorithms / Programming Practice'
+    },
+    'sorting-but-cool': {
+        categories: ['experiments'],
+        domain: 'Algorithms / Sorting Practice'
+    },
+    etsalpro: {
+        categories: ['experiments'],
+        domain: 'Coursework / Intro Programming'
     }
 };
 
@@ -921,8 +1080,8 @@ window.portfolioProjects = window.portfolioProjects.map((project) => {
         categories: detail.categories || project.categories || [],
         liveUrl: detail.liveUrl || project.liveUrl,
         domain: detail.domain || project.domain || project.category,
-        coverImage: folder ? `img/${folder}/1.png` : (detail.coverImage || project.coverImage || ''),
-        screenshots: folder ? createProjectScreenshots(folder, project.title, detail.scenes || []) : (detail.screenshots || project.screenshots || []),
+        coverImage: folder ? `img/${folder}/1.png` : (project.coverImage || ''),
+        screenshots: folder ? createProjectScreenshots(folder, project.title, detail.scenes || []) : (project.screenshots || []),
         overview: detail.overview || project.overview || [
             project.summary,
             `Built as a ${project.category.toLowerCase()} project using ${tags.join(', ')}.`

@@ -1,16 +1,15 @@
 # Hafidz Mulia - Portfolio Website
 
 [![Live Demo](https://img.shields.io/badge/demo-live-success?style=for-the-badge)](https://hafmul.site)
-[![Live Demo](https://img.shields.io/badge/demo-live-success?style=for-the-badge)](https://hafmul.site)
 [![License](https://img.shields.io/badge/license-MIT-blue?style=for-the-badge)](LICENSE)
 
-Static portfolio website for Hafidz Mulia, focused on full-stack web development work across Laravel, Next.js, GIS, reporting systems, and health-tech products.
+Static portfolio website for Hafidz Mulia, positioned around product building, technical problem solving, and leadership across education, internal operations, GIS, and health-support products.
 
 ## About
 
 This portfolio is used as a public showcase for:
 
-- Full-stack product delivery with Laravel, PHP, Next.js, React, and TypeScript
+- Product delivery with Laravel, PHP, Next.js, React, React Native, and TypeScript
 - Database-driven systems using MySQL, MongoDB, PostgreSQL, PostGIS, Appwrite, and Firebase
 - Admin dashboards, reporting tools, operational systems, and education platforms
 - Public project cards plus detailed project case-study pages via `porto-show.html`
@@ -19,15 +18,13 @@ This portfolio is used as a public showcase for:
 
 The projects section is now driven from `js/project-data.js` and grouped into switchable categories instead of a single static featured list.
 
-Default front view highlights latest featured work such as:
+Default front view highlights featured work such as:
 
+- `ArahBelajar`
+- `mainbipa.id`
 - `nechcode.id`
-- `THYVA`
-- `SOULMOM`
 - `REAL KEKE`
-- `PREMOM`
-- `HISurabaya`
-- `ELKPD`
+- `SMARTBALITA`
 - `Rapor HIMATIKA`
 
 Available project filters include:
@@ -87,21 +84,11 @@ Each featured project already has a dedicated detail page rendered from `porto-s
 
 To add screenshots later:
 
-1. Put the new image files inside `img/projects/<slug>/`
+1. Put the new image files inside the folder referenced by `mediaFolder`, for example `img/arahbelajar/`, `img/mainbipa/`, or `img/realkeke/`
 2. Open `js/project-data.js`
-3. Add screenshot objects inside the relevant project's `screenshots` array:
+3. Keep the files named sequentially as `1.png`, `2.png`, `3.png`, and so on
 
-```js
-screenshots: [
-  {
-    image: 'img/projects/hisurabaya/dashboard-1.png',
-    title: 'Dashboard View',
-    description: 'Short explanation of what this screen shows.'
-  }
-]
-```
-
-If no screenshots are defined, the detail page shows carousel placeholders automatically.
+The detail page is generated automatically from `mediaFolder`, scenes, and the `createProjectScreenshots(...)` helper in `js/project-data.js`. If no screenshots are available, the detail page shows carousel placeholders automatically.
 
 ## Local Usage
 
